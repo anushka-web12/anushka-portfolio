@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>Cozy Cafe</title>
+        <style>
+            html{
+                scroll-behavior:smooth;
+            }
+            body{
+                margin:0;
+                font-family:Arial,sans-serif;
+                background-color:#fff8f0;
+                color:#3e2723;
+            }
+            header{
+                background-color:#4e342e;
+                color:white;
+                text-align:center;
+                padding:35px 15px;
+            }
+            header h1{
+                font-size:38px;
+                margin-bottom:10px;
+            }
+            nav{
+                background-color:#795548;
+                padding:15px;
+                display:flex;
+                justify-content:center;
+                gap:25px;
+                flex-wrap:wrap;
+            }
+            nav a{
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+            }
+            nav a:hover{
+                color:#ffcc80;
+            }
+            section{
+                padding:30px 15px;
+                text-align:center;
+            }
+            .card{
+                background-color:white;
+                padding:20px;
+                margin:15px auto;
+                max-width:450px;
+                border-radius:12px;
+                box-shadow:0 3px 10px #00000015;
+                transition:transform 0.3s;
+            }
+            .card:hover{
+                transform:translateY(-5px)
+            }
+            .price{
+                color:#795548;
+                font-weight:bold;
+            }
+            .button{
+                display:inline-block;
+                background-color:#795548;
+                color:white;
+                padding:12px 22px;
+                text-decoration:none;
+                border-radius:8px;
+            }
+            footer{
+                background-color:#4e342e;
+                color:white;
+                text-align:center;
+                padding:18px;
+            }
+            @media(max-width:600px){
+                header h1{
+                    font-size:30px;
+                }
+                nav{
+                    gap:15px;
+                }
+                .card{
+                    box-sizing:border-box;
+                    width:100%;
+                }
+            }
+            .cafe-image{
+                width:90%;
+                max-width:600px;
+                height:280px;
+                object-fit:cover;
+                border-radius:15px;
+                margin-top:20px;
+            }
+            @media(max-width:600px){
+                .cafe-image{
+                    height:200px;
+                }
+            }
+            .menu-image{
+                width:100%;
+                max-width:300px;
+                height:180px;
+                object-fit:cover;
+                border-radius:10px;
+                margin:10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="home">
+            <h1>
+                🍵 Cozy Cafe
+            </h1>
+            <p>Your Little Corner of Happiness</p>
+            <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80"
+            alt="Freshly brewed coffee"
+            class="cafe-image"
+            >
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="about">
+            <h2>Welcome to Cozy Cafe</h2>
+            <div class="card">
+                <p>
+                    Enjoy freshly brewed coffee,delicious snacks
+                    and a peaceful atmosphere with your friends.
+                </p>
+                <p>Good Coffee.Good Mood.Good Moments.</p>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="card">
+                <h3>🍵 Cappuccino</h3>
+                <img
+                src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80"
+                alt="Cappuccino coffee"
+                class="menu-image"
+                >
+                <p>A creamy and delicious coffee.</p>
+                <p class="price">₹120</p>
+                <a class="button"href="#contact">Order Now</a>
+          </div>
+            <div class="card">
+                <h3>🍫 Hot Chocolate</h3>
+                <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80"
+                alt="Hot chocolate"
+                class="menu-image"
+                >
+                <p>A warm chocolate drink.</p>
+                <p class="price">₹140</p>
+                <a class="button"href="#contact">Order Now</a>
+            </div>
+            <div class="card">
+                <h3>🥪 Grilled Sandwich</h3>
+                <img
+                src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
+                alt="Grilled sandwich"
+                class="menu-image"
+                >
+                <p>A tasty snack with a crispy bite.</p>
+                <p class="price">₹100</p>
+                <a class="button"href="#contact">Order Now</a>
+            </div>
+            <div class="card">
+                <h3>🍰 Chocolate Cake</h3>
+                <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+                alt="Chocolate cake"
+                class="menu-image"
+                >
+                <p>A sweet treat for your day.</p>
+                <p class="price">₹90</p>
+                <a class="button"href="#contact">Order Now</a>
+            </div>   
+        </section>
+        <section id="contact">
+            <h2>Visit Us</h2>
+            <div class="card">
+                <p>We would love to see you!</p>
+                <p>Monday-Sunday</p>
+                <p>10:00 AM-10:00 PM</p>
+                <a class="button"
+                href="mailto:your-email@example.com">
+            Contact Us
+        </a>
+            </div>
+        </section>
+        <footer>
+            <p>© 2026 Cozy Cafe | Sample Website Project</p>
+        </footer>
+    </body>
+    </html>
